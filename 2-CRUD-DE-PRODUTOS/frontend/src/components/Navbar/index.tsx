@@ -13,7 +13,7 @@ export function NavBar() {
     },
   ];
 
-
+    // opt = option
   return (
     <>
       <nav>
