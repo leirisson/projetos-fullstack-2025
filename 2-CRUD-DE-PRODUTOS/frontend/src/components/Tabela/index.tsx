@@ -34,7 +34,7 @@ export function Tabela() {
       }
     }
     loadTarefas();
-  }, [tarefas]);
+  }, []);
 
   async function onDeleteTarefa(id: string) {
     await tarefaService.deletar(id);
