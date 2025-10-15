@@ -5,8 +5,10 @@ import { AppRoutes } from "./routes/AppRoutes";
 function App() {
   return (
     <>
-      <NavBar />
-      <AppRoutes />
+      <main className="p-5">
+        <NavBar />
+        <AppRoutes />
+      </main>
     </>
   );
 }

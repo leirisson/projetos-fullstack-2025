@@ -14,6 +14,14 @@ export const tarefaService = {
     //criar uma nova tarefa
     async create(tarefa: ITarefa): Promise<void>{
         await api.post('/tarefa', tarefa)
+    },
+
+    // deletar uma tarefa
+    async deletar(id: string): Promise<void>{
+        if(id === undefined){
+            throw new Error("o id não pod ser undefined")
+        }
+        await api.delete(`/tarefa/${id}`)
     }
     
 }
